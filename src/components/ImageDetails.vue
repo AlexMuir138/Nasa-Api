@@ -3,15 +3,15 @@
     <div class="row">
       <div class="col-12 ">
         <div class="card bg-dark" v-if="image">
-          <u class="text-light"><h3 class="text-center text-light p-3 m-3">
+          <h3 class="text-center text-info p-3 m-3">
             {{ image.title }}
-          </h3></u>
+          </h3>
           <div class="card-body">
-            <span class="d-flex justify-content-center">
-              <img :src="image.url" height="500" />
+            <span class="d-flex justify-content-center border-light border-top shadow-lg">
+              <img :src="image.url" height="500" class="pt-5" />
             </span>
           </div>
-          <p class="m-5 p-3 text-light border-light">
+          <p class="m-5 p-3 text-light border-light text-center border-top">
             {{ image.explanation }}
           </p>
         </div>
